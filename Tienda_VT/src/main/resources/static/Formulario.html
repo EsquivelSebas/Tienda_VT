@@ -7,7 +7,7 @@
         <link href="css/Estilos.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
-       <header class="encabezado">
+        <header class="encabezado">
 
             <nav class="navegacion">
                 <a class="logo nav-link" href="index.html">TechShop</a>
@@ -22,18 +22,24 @@
             </nav> 
         </header>
         <aside>
-            <h2>Uso de Videos </h2>
-            <p>Los videos pueden usarse una biblioteca audiovisual </p>
+            <h2>Uso de Forms   </h2>
+            <p>Los los forms se pueden usar para recuperar informacion de usuario </p>
         </aside>
         <section>
-            <h2>videos </h2>
+            <h2>Form basico </h2>
             <article>
-                <h3>el trailer de uan pelicula  </h3>
-                <video width="320" height="240" controls 
-                    <img src="img/torpedo.jpg" alt=""/>
-                    <source src="videos/torpedo.mp4" type="video/mp4">
-                    Your browser does not support the <code>video</code> tag.
-                </video>
+                <h3>Registro de cliente </h3>
+                <form action="/cliente/agregar" 
+                      method="post">                   
+                    Nombre compeleto:<input type="text" name="Nombre" value="" size="45" /><br>
+                    Clave:<input type="password" name="clave" value="" size="10" /><br>
+                    Edad:<input type="number" name="Edad" value="" size="2" /><br>
+                    Correo:<input type="email" name="correo" value="" /><br>
+                    <input type="submit" value="enviar" />
+
+
+                </form>
+
             </article>
         </section>
         <footer>
