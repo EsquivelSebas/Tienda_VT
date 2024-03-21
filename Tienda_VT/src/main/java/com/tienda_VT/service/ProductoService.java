@@ -36,7 +36,14 @@ public interface ProductoService {
     
     // Se define una consulta ampliada SQL navita  para obtener la la lista de productos 
     //Que se encuentran en un rango de precios
-   
     public List<Producto> consultaSQL(double precioInf, double precioSup);
+    
+    
+    
+    //consultas de la tarea///////////////////////////////////////////////////
+    public List<Producto> consultaPorNombre(String nombre);
+    public List<Producto> consultaPorId(Long id);
+    public List<Producto> consultaPorPrecio(double precioInf);
+    
     
 }

@@ -12,7 +12,7 @@ import org.springframework.transaction.annotation.Transactional;
 public class ProducroServiceImpl
         implements ProductoService {
 
-   @Autowired
+    @Autowired
     private ProductoDao productoDao;
 
     @Override
@@ -50,7 +50,7 @@ public class ProducroServiceImpl
     //Que se encuentran en un rango de precios 
     @Override
     @Transactional(readOnly = true)
-    public List<Producto> consultaJPA(double precioInf, double precioSup){
+    public List<Producto> consultaJPA(double precioInf, double precioSup) {
         return productoDao.findByPrecioBetweenOrderByPrecio(precioInf, precioSup);
     }
 
@@ -58,7 +58,7 @@ public class ProducroServiceImpl
     //Que se encuentran en un rango de precios
     @Override
     @Transactional(readOnly = true)
-    public List<Producto> consultaJPQL(double precioInf, double precioSup){
+    public List<Producto> consultaJPQL(double precioInf, double precioSup) {
         return productoDao.consultaJPQL(precioInf, precioSup);
     }
 
@@ -66,9 +66,26 @@ public class ProducroServiceImpl
     //Que se encuentran en un rango de precios
     @Override
     @Transactional(readOnly = true)
-    public List<Producto> consultaSQL(double precioInf, double precioSup){
+    public List<Producto> consultaSQL(double precioInf, double precioSup) {
         return productoDao.consultaSQL(precioInf, precioSup);
     }
 
+    @Override
+    public List<Producto> consultaPorNombre(String nombre) {
+        
+       return productoDao.findByDescripcionContains(nombre);
+    }
 
+    @Override
+    public List<Producto> consultaPorId(Long id) {
+        return  productoDao.consultaPorId(id);
+    }
+
+    @Override
+    @Transactional(readOnly = true)
+    public List<Producto> consultaPorPrecio(double precioInf) {
+        return productoDao.consultaPorPrecio(precioInf);
+    }
+
+    
 }
