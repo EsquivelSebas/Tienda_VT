@@ -39,7 +39,7 @@ public class Projectconfig implements WebMvcConfigurer {
     public void addInterceptors(InterceptorRegistry registry) {
         registry.addInterceptor(localeChangeInterceptor());
     }
-/*
+
     //El sigueinte metodo se supera la proxima semana cuando usamos usuarios de base de datos 
     @Bean
     public UserDetailsService users() {
@@ -86,6 +86,6 @@ public class Projectconfig implements WebMvcConfigurer {
                 .logout((logout) -> logout.permitAll());
         return http.build();
     }
-*/
+
 
 }
