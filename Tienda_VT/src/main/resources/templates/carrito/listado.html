@@ -1,23 +1,19 @@
-
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:th="http://www.thymeleaf.org">
     <head th:replace="~{layout/plantilla :: head}"> <!-- Comienza encabezado -->
-        <title>LaPulpe</title> <!-- El titulo de la pagina -->
+        <title>TechShop</title> <!-- El titulo de la pagina -->
         <meta charset="UTF-8"/> 
         <link href="css/estilos.css" rel="stylesheet" type="text/css"/>
     </head> 
     <body> 
-        <header th:replace="~{layout/plantilla :: header}"/>    
         
-        <h2>Login</h2>
-        <form method="post" th:action='@{/login}'>
-            Username <input type="text" name=" username"/><br/>
-            Clave <input type='password'name='password'/><br/>
-            <input type='submit'value='Login'
-            
-        </form>
-            
+        <header th:replace="~{layout/plantilla :: header}"/>   
+        
+        <section th:replace="~{categoria/fragmentos :: botonesAgregar}"/>  
+        <section th:replace="~{categoria/fragmentos :: listadoCategorias}"/>                  
+        <section th:replace="~{categoria/fragmentos :: agregarCategoria}"/>  
+        
         <footer th:replace="~{layout/plantilla :: footer}"/>
     </body> <!-- Cierra el cuerpo -->
 </html>
