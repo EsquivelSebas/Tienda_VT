@@ -28,23 +28,27 @@ This project is an online store for purchasing computer peripherals. The system 
 - **CSS**: Custom styles to enhance the look and feel of the website.
 - **Bootstrap**: Responsive design framework used to create a mobile-friendly layout.
 - **Java**: Backend logic for handling user data, processing orders, and managing the database.
+- **SpringBoot: Backend logic, mainly used for its function to create embedded servers.
 
 ==============================================================================================
 
 ## Installation
 
 1. Clone the repository:
-    ```bash
-    git clone https://github.com/yourusername/peripheral-store.git
+2.  ```bash
+    git clone https://github.com/EsquivelSebas/Tienda_VT.git
     ```
-2. Navigate to the project directory:
-    ```bash
-    cd peripheral-store
-    ```
-3. Open the `index.html` file in your web browser to view the front end.
-4. Set up the backend:
+3. Open your own IDE
+   ''''Netbeans, Eclipse, Visual Studio Code
+   '''Execute the springboot project
+
+5. Open your web browser and search for 'localhost' in the URL to see the main index.html page.
+   
+6. Set up the backend:
     - Ensure you have Java installed and configured properly.
     - Compile and run the Java backend using your preferred IDE or command line.
+    - Ensure you have Springboot installed and all the ambient it requires to execute
+    - check the sql archive to confirm the user and password of the DB.
 
 ==============================================================================================
 
@@ -53,18 +57,5 @@ This project is an online store for purchasing computer peripherals. The system 
 - **Browse Products**: View and search for peripherals in different categories such as keyboards, mice, monitors, etc.
 - **Manage Cart**: Add items to your cart and adjust quantities before proceeding to checkout.
 - **User Account**: Create an account to save your information, view order history, and manage your profile.
-- **Checkout**: Complete your purchase by following the checkout process and entering your payment information.
-
-==============================================================================================
-
-## Contributing
-
-We welcome contributions! Please read our [contributing guidelines](CONTRIBUTING.md) for more details on how to get involved.
-
-==============================================================================================
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
+  
 ==============================================================================================
