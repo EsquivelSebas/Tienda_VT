@@ -18,7 +18,7 @@ This project is an online store for purchasing computer peripherals. The system 
 ## Features
 
 - **Product Catalog**: Browse through a variety of computer peripherals with detailed descriptions and images.
-- **Shopping Cart**: Add products to your cart and manage quantities before checking out.
+- **Shopping Cart**: Add products to your cart and manage quantities.
 - **Responsive Design**: Built with Bootstrap to ensure the website is fully responsive and looks great on all devices.
 - **User Accounts**: Users can create accounts, track orders, and save favorite products by adding them to your own shopping cart.
 
